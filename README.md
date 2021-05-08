@@ -1,1 +1,1 @@
-Litecash Website Files
+Litecash Website Files. Contributors welcome.
