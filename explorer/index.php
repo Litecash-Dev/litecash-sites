@@ -166,12 +166,12 @@ $litecash_price = get_cash_price();
 					<div class="center-heading">
 						<h2 class="section-title">General Information</h2>
 					</div>
-				</div><!--
+				</div>
 				<div class="offset-lg-3 col-lg-6">
 					<div class="center-text">
 						<p>Current pricing is based upon CoinGecko data.</p>
 					</div>					
-				</div>-->
+				</div>
 			</div>
 			<div class="row">
 
