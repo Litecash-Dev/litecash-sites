@@ -59,8 +59,8 @@ body{
         padding-bottom: 25px;
         position: relative;
     }
-.timeline-nodes:nth-child(even) {
-    flex-direction: row-reverse;
+.timeline-nodes {
+    /* flex-direction: row-reverse; */
 }
 .timeline h3, .timeline p {
     padding: 5px 15px;
@@ -94,13 +94,14 @@ body{
     font-size: 1.7rem;
     border-radius: 10px;
     margin: 30px 0px 10px 0;
+    text-align: center;
 }
 .timeline::before {
     content: "";
     display: block;
     position: absolute;
     top: 0;
-    left: 50%;
+    left: 20%;
     width: 0;
     border-left: 2px dashed var(--blue);
     height: 100%;
@@ -123,38 +124,22 @@ body{
     margin: 10px;
     list-style: disc;
 }
-.timeline-nodes:nth-child(odd) h3,
+/* .timeline-nodes:nth-child(odd) h3,
 .timeline-nodes:nth-child(odd) p {
     text-align: right;
-}
+} */
 .timeline-date {
     font-size: 1.2rem;
     padding-top: 0 !important;
 }
-.timeline-nodes:nth-child(odd) .timeline-date {
-    text-align: left;
-}
-
-.timeline-nodes:nth-child(even) .timeline-date {
+.timeline-nodes .timeline-date {
     text-align: right;
 }
-.timeline-nodes:nth-child(odd) .timeline-date time {
-    margin-left: -40px;
+
+.timeline-nodes .timeline-date time {
+    /* margin-right: -40px; */
 }
-.timeline-nodes:nth-child(even) .timeline-date time {
-    margin-right: -40px;
-}
-.timeline-nodes:nth-child(odd) .timeline-content::after {
-    content: "";
-    position: absolute;
-    top: 15px;
-    left: 100%;
-    width: 0;
-    border-left: 10px solid var(--blue);
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-}
-.timeline-nodes:nth-child(even) .timeline-content::after {
+.timeline-nodes .timeline-content::after {
     content: "";
     position: absolute;
     top: 15px;
@@ -181,6 +166,7 @@ body{
     left: 50%;
     transform: translate(-50%,-50%);
     background-color: #fff;
+    margin-left: -7px;
     /* z-index: 1; */
 
 
@@ -199,7 +185,7 @@ body{
 .timeline-nodes:nth-child(even) {
     flex-direction: row;
 }
-    .timeline::before {
+  .timeline::before {
     content: "";
     display: block;
     position: absolute;
@@ -208,7 +194,7 @@ body{
     width: 0;
     border-left: 2px dashed var(--blue);
     height: 100%;
-    z-index: 1;
+    /* z-index: 1; */
     transform: translateX(-50%);
 }
 .timeline h3 {
@@ -245,12 +231,13 @@ body{
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
 }
-.timeline-nodes:nth-child(even) .timeline-date {
+.timeline-nodes .timeline-date {
     text-align: left;
+    padding-bottom: 0 !important;
 }
 .timeline-image::before {
-    width: 65px;
-    height: 65px;
+    width: 25px;
+    height: 25px;
 }
 }
 
@@ -261,15 +248,15 @@ body{
     display: block;
     position: absolute;
     top: 0;
-    left: 3%;
+    left: 2%;
 }
 .timeline-image {
     position: absolute;
     left: -5%;
     }
 .timeline-image::before {
-    width: 60px;
-    height: 60px;
+    width: 20px;
+    height: 20px;
 }
 }
 
@@ -318,55 +305,59 @@ body{
     <div class="container" style="padding-top: 66px">
 
         <div class="timeline">
-            <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
-                <div class="col-8 col-sm-4 px-md-3 order-2 text-md-center">
+            <div class="row no-gutters">
+                <div class="col-4 col-md-3 col-sm-4 px-md-3 text-md-center offset-md-1 offset-1">
                     <div class="year-label">2021</div>
                 </div>
             </div>
-            <!-- <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
-                    <div class="col-10 col-md-5 order-3 order-md-1 timeline-content" style="padding: 10px;">
-                        <h4><strong>Litecash</strong> relaunch</h4>
-                    </div>
-                    <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center"></div>
-                    <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
-                    <time><span class="quarter">Q2</span> <span class="year">2021</span></time>
-                </div>
-              </div> -->
-            <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
-                <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
-                    <ul>
-                        <li>iOS Developer recruitment </li>
-                        <li>Development of MacOS Wallet</li>
-                    </ul>
-                </div>
-                <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center"></div>
-                <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
-                <time><span class="quarter">Q3</span> <span class="year">2021</span></time>
+            <div class="row no-gutters justify-content-end justify-content-md-around align-items-start timeline-nodes">
+              <div class="col-10 col-md-2 col-sm-2 py-3 timeline-date">
+                <time><span class="quarter">Q2</span> <span class="year">2021</span></time>
+              </div>
+              <div class="col-2 col-md-1 col-sm-1 px-md-3a AAorder-2 timeline-image text-md-center"></div>
+              <div class="col-10 col-md-9 col-sm-9 timeline-content" style="padding: 10px;">
+                  <h4><strong>Litecash</strong> relaunch</h4>
+              </div>
             </div>
+            <div class="row no-gutters justify-content-end justify-content-md-around align-items-start timeline-nodes">
+              <div class="col-10 col-md-2 py-3 timeline-date">
+                <time><span class="quarter">Q3</span> <span class="year">2021</span></time>
+              </div>
+              <div class="col-2 col-sm-1 px-md-3 timeline-image text-md-center"></div>
+              <div class="col-10 col-md-9 timeline-content">
+                  <ul>
+                      <li>iOS Developer recruitment </li>
+                      <li>Development of MacOS Wallet</li>
+                      <li>Website updates</li>
+                  </ul>
+              </div>
           </div>
-          <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
-            <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+          <div class="row no-gutters justify-content-end justify-content-md-around align-items-start timeline-nodes">
+            <div class="col-10 col-md-2 py-3 timeline-date">
+              <time><span class="quarter">Q4</span> <span class="year">2021</span></time>
+            </div>
+            <div class="col-2 col-sm-1 px-md-3 timeline-image text-md-center"></div>
+            <div class="col-10 col-md-9 timeline-content">
                 <ul>
                     <li>Development of iOS Wallet </li>
                     <li>Release of MacOS Wallet</li>
                     <li>Wallet feature upgrades (USD & BTC values) </li>
                 </ul>
             </div>
-            <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
-            </div>
-            <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
-              <time><span class="quarter">Q4</span> <span class="year">2021</span></time>
-            </div>
           </div>
         </div>
         <div class="timeline">
-          <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
-                <div class="col-8 col-sm-4 px-md-3 order-2 text-md-center">
+            <div class="row no-gutters">
+                <div class="col-4 col-md-3 col-sm-4 px-md-3 text-md-center offset-md-1 offset-1">
                     <div class="year-label">2022</div>
                 </div>
             </div>
-          <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
-            <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+          <div class="row no-gutters justify-content-end justify-content-md-around align-items-start timeline-nodes">
+            <div class="col-10 col-md-2 py-3 timeline-date">
+                <time><span class="quarter">Q1</span> <span class="year">2022</span></time>
+            </div>
+            <div class="col-2 col-sm-1 px-md-3 timeline-image text-md-center"></div>
+            <div class="col-10 col-md-9 timeline-content">
                 <ul>
                     <li>Development of iOS Wallet </li>
                     <li>Setup of Blog</li>
@@ -374,24 +365,18 @@ body{
                     <li>Android Wallet Tutorial</li>
                 </ul>
             </div>
-            <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
-            </div>
-            <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
-                <time><span class="quarter">Q1</span> <span class="year">2022</span></time>
-            </div>
         </div>
-        <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
-            <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+        <div class="row no-gutters justify-content-end justify-content-md-around align-items-start timeline-nodes">
+            <div class="col-10 col-md-2 py-3 timeline-date">
+                <time><span class="quarter">Q2</span> <span class="year">2022</span></time>
+            </div>
+            <div class="col-2 col-sm-1 px-md-3 timeline-image text-md-center"></div>
+            <div class="col-10 col-md-9 timeline-content">
                 <ul>
                     <li>Release of iOS Wallet</li>
                     <li>Trading Litecash Tutorial</li>
                     <li>Mining Tutorial</li>
                 </ul>
-            </div>
-            <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
-            </div>
-            <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
-                <time><span class="quarter">Q2</span> <span class="year">2022</span></time>
             </div>
         </div>
 
