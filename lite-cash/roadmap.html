@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Litecash - The Speed of Lite</title>
+    <meta name="description" content="Litecash is a cryptocurrency for everyone." />
+    <meta name="keywords" content="bitcoin, ethereum, monero, ico, token, free token, btc, eth" />
+    <meta name="author" content="tempload" />
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Bootstrap & Plugins CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/owl.carousel.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom CSS -->
+    <link href="assets/css/dark.css" rel="stylesheet" type="text/css">
+
+    <style type="text/css">
+
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --blue:#54A4F0;
+    --gray:#ebebeb;
+    --box-shadow1:0px 0px 18px 2px rgba(10, 55, 90, 0.15);
+}
+body{
+	font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    color: #637280;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+:focus{
+    outline: 0px solid transparent !important;
+}
+.timeline {
+    /* padding: 50px 0; */
+    position: relative;
+}
+.timeline .row {
+    padding: 20px 0;
+}
+.timeline-nodes {
+        padding-bottom: 25px;
+        position: relative;
+    }
+.timeline-nodes {
+    /* flex-direction: row-reverse; */
+}
+.timeline h3, .timeline p {
+    padding: 5px 15px;
+}
+.timeline h3{
+    font-weight: lighter;
+    background: var(--blue);
+}
+.timeline p, .timeline time {
+    color: var(--blue);
+}
+.timeline p, .timeline time .quarter {
+    font-weight: bold;
+    font-size: 1.7rem;
+    display: inline-block;
+}
+.timeline p, .timeline time .year {
+    opacity: 0.8;
+    display: none;
+    margin-bottom: 22px;
+    font-size: 1rem;
+    padding: 0 4px;
+    border: solid 1px var(--blue);
+    border-radius: 5px;
+}
+.year-label {
+    padding: 5px;
+    background: white;
+    border: solid 2px var(--blue);
+    color: var(--blue);
+    font-size: 1.7rem;
+    border-radius: 10px;
+    margin: 30px 0px 10px 0;
+    text-align: center;
+}
+.timeline::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 20%;
+    width: 0;
+    border-left: 2px dashed var(--blue);
+    height: 100%;
+    /* z-index: 1; */
+    transform: translateX(-50%);
+}
+.timeline-content {
+    border: 1px solid var(--blue);
+    background-color: var(--blue);
+    color: #fff;
+    position: relative;
+    border-radius: 10px; /*0 0 10px 10px;*/
+    box-shadow: 0px 3px 25px 0px rgba(10, 55, 90, 0.2)
+}
+.timeline-content ul {
+    margin-left: 20px;
+}
+.timeline-content li {
+    padding: 0;
+    margin: 10px;
+    list-style: disc;
+}
+/* .timeline-nodes:nth-child(odd) h3,
+.timeline-nodes:nth-child(odd) p {
+    text-align: right;
+} */
+.timeline-date {
+    font-size: 1.2rem;
+    padding-top: 0 !important;
+}
+.timeline-nodes .timeline-date {
+    text-align: right;
+}
+
+.timeline-nodes .timeline-date time {
+    /* margin-right: -40px; */
+}
+.timeline-nodes .timeline-content::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 100%;
+    width: 0;
+    border-right: 10px solid var(--blue);
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+.timeline-image {
+    position: relative;
+    /* z-index: 100; */
+}
+.timeline-image::before {
+    content: "";
+    margin-top: 26px;
+    width: 20px;
+    height: 20px;
+    border: 3px solid var(--blue);
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    margin-left: -7px;
+    /* z-index: 1; */
+
+
+}
+.timeline-image img {
+    position: relative;
+    /* z-index: 100; */
+}
+/*small device style*/
+
+@media (max-width: 767px) {
+
+  .year-label {
+    margin: 30px 0px 10px 30px;
+}
+
+    .timeline-nodes:nth-child(odd) h3,
+    .timeline-nodes:nth-child(odd) p {
+    text-align: left
+}
+.timeline-nodes:nth-child(even) {
+    flex-direction: row;
+}
+  .timeline::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 4%;
+    width: 0;
+    border-left: 2px dashed var(--blue);
+    height: 100%;
+    /* z-index: 1; */
+    transform: translateX(-50%);
+}
+.timeline h3 {
+    font-size: 1.5rem;
+}
+.timeline p {
+    font-size: 14px;
+}
+.timeline-image {
+    position: absolute;
+    left: 0%;
+    top: 60px;
+    /*transform: translateX(-50%;);*/
+}
+/* .timeline-nodes:nth-child(odd) .timeline-content::after {
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: auto;
+    right: 100%;
+    width: 0;
+    border-left: 0;
+    border-right: 10px solid var(--blue);
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+} */
+.timeline-nodes .timeline-content::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 100%;
+    width: 0;
+    border-right: 10px solid var(--blue);
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+.timeline-nodes .timeline-date {
+    text-align: left;
+    padding-bottom: 0 !important;
+}
+.timeline-image::before {
+    width: 25px;
+    height: 25px;
+}
+}
+
+/*extra small device style */
+@media (max-width: 575px) {
+    .timeline::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 2%;
+}
+.timeline-image {
+    position: absolute;
+    left: -5%;
+    }
+.timeline-image::before {
+    width: 20px;
+    height: 20px;
+}
+}
+
+
+
+      </style>
+</head>
+
+<body>
+
+    <!-- <div class="loading-wrapper">
+        <div class="loading">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div> -->
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                      <!-- ***** Logo Start ***** -->
+                      <a href="index.html" class="logo">
+                        <img src="assets/images/logos/Logo23.png">
+                      </a>
+                      <!-- ***** Menu Start ***** -->
+                      <ul class="nav">
+                        <li><a href="https://lite-cash.com/litepaper.pdf">WHITEPAPER</a></li>
+                        <li><a href="http://explorer.lite-cash.com">EXPLORER</a></li>
+                        <li><a href="/#features">FEATURES</a></li>
+                        <li><a href="/#exchange">EXCHANGE</a></li>
+                        <li><a href="/roadmap-a.html">ROAD MAP</a></li>
+                        <li><a href="/#commerce">COMMERCE</a></li>
+                        <li><a href="https://shop.lite-cash.com">MERCH</a></li>
+                      </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <div class="container" style="padding-top: 66px">
+
+        <div class="timeline">
+            <div class="row no-gutters">
+                <div class="col-4 col-md-3 col-sm-4 px-md-3 text-md-center offset-md-1 offset-1">
+                    <div class="year-label">2021</div>
+                </div>
+            </div>
+            <div class="row no-gutters justify-content-end justify-content-md-around align-items-start timeline-nodes">
+              <div class="col-10 col-md-2 col-sm-2 py-3 timeline-date">
+                <time><span class="quarter">Q2</span> <span class="year">2021</span></time>
+              </div>
+              <div class="col-2 col-md-1 col-sm-1 px-md-3a AAorder-2 timeline-image text-md-center"></div>
+              <div class="col-10 col-md-9 col-sm-9 timeline-content" style="padding: 10px;">
+                  <ul>
+                    <li>Development of MacOS Wallet</li>
+                    <li>Setup of Blog</li>
+                    <li>Linux Wallet Tutorial</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row no-gutters justify-content-end justify-content-md-around align-items-start timeline-nodes">
+              <div class="col-10 col-md-2 py-3 timeline-date">
+                <time><span class="quarter">Q3</span> <span class="year">2021</span></time>
+              </div>
+              <div class="col-2 col-sm-1 px-md-3 timeline-image text-md-center"></div>
+              <div class="col-10 col-md-9 timeline-content">
+                  <ul>
+                    <li>iOS Developer recruitment </li>
+                    <li>Release of MacOS Wallet</li>
+                    <li>Website updates (on going)</li>
+                  </ul>
+              </div>
+          </div>
+          <div class="row no-gutters justify-content-end justify-content-md-around align-items-start timeline-nodes">
+            <div class="col-10 col-md-2 py-3 timeline-date">
+              <time><span class="quarter">Q4</span> <span class="year">2021</span></time>
+            </div>
+            <div class="col-2 col-sm-1 px-md-3 timeline-image text-md-center"></div>
+            <div class="col-10 col-md-9 timeline-content">
+                <ul>
+                    <li>Development of iOS Wallet </li>
+                    <li>Wallet feature upgrades (USD & BTC values) </li>
+                    <li>Partnerships/Collaborations</li>
+                </ul>
+            </div>
+          </div>
+        </div>
+        <div class="timeline">
+            <div class="row no-gutters">
+                <div class="col-4 col-md-3 col-sm-4 px-md-3 text-md-center offset-md-1 offset-1">
+                    <div class="year-label">2022</div>
+                </div>
+            </div>
+          <div class="row no-gutters justify-content-end justify-content-md-around align-items-start timeline-nodes">
+            <div class="col-10 col-md-2 py-3 timeline-date">
+                <time><span class="quarter">Q1</span> <span class="year">2022</span></time>
+            </div>
+            <div class="col-2 col-sm-1 px-md-3 timeline-image text-md-center"></div>
+            <div class="col-10 col-md-9 timeline-content">
+                <ul>
+                    <li>Development of iOS Wallet </li>
+                    <li>Android Wallet Tutorial</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row no-gutters justify-content-end justify-content-md-around align-items-start timeline-nodes">
+            <div class="col-10 col-md-2 py-3 timeline-date">
+                <time><span class="quarter">Q2</span> <span class="year">2022</span></time>
+            </div>
+            <div class="col-2 col-sm-1 px-md-3 timeline-image text-md-center"></div>
+            <div class="col-10 col-md-9 timeline-content">
+                <ul>
+                    <li>Release of iOS Wallet</li>
+                    <li>Mining Tutorial</li>
+                    <li>Trading Litecash Tutorial</li>
+                    <li>Exchange Listings</li>
+                </ul>
+            </div>
+        </div>
+
+
+
+          <!-- <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
+            <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+              <h3 class=" text-light">Timeline Heading</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, eaque amet deleniti hic quas qui cumque delectus aliquid, eius quia quod, quae, aliquam aspernatur facilis. Minima quod corporis dignissimos porro.</p>
+            </div>
+            <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+            </div>
+            <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+              <time>2018-02-23</time>
+            </div>
+          </div>
+          <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
+            <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+              <h3 class=" text-light">Timeline Heading</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, eaque amet deleniti hic quas qui cumque delectus aliquid, eius quia quod, quae, aliquam aspernatur facilis. Minima quod corporis dignissimos porro.</p>
+            </div>
+            <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+            </div>
+            <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+              <time>2018-02-23</time>
+            </div>
+          </div> -->
+        </div>
+      </div>
+
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/particles.min.js"></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/jquery.downCount.js"></script>
+    <script src="assets/js/parallax.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+
+    <!-- Global Init -->
+    <script src="assets/js/particle-dark.js"></script>
+    <!-- <script src="assets/js/custom.js"></script> -->
+</body>
+
+</html>
