@@ -1322,6 +1322,9 @@ header
   background: none;
   color: #32373E;
 }
+.navbar-toggler {
+  display: none;
+}
 
 .header-area.header-sticky .lang {
   margin-top: 22px !important;
@@ -1377,6 +1380,16 @@ header
     -moz-transition: all 0s ease 0s;
     -o-transition: all 0s ease 0s;
     transition: all 0s ease 0s;
+  }
+  .header-area .main-nav .nav.nav-mobile {
+    display: block;
+    margin-top: 0 !important;
+  }
+  .navbar-toggler {
+    display: inline-block;
+    float: right;
+    margin-top: 16px;
+    margin-right: 16px;
   }
   .header-area .main-nav .nav li {
     width: 100%;
