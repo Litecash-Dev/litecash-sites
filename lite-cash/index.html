@@ -27,6 +27,12 @@
 
     <!-- Custom CSS -->
     <link href="assets/css/dark.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+    /* css over rides */
+    body .welcome-area:after {
+        background-image: linear-gradient(134deg, #000 0%, #000 100%);
+    }
+    </style>
 </head>
 
 <body>
@@ -51,7 +57,7 @@
                         </a>
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
-                            <li><a href="https://lite-cash.com/litepaper.pdf">WHITEPAPER</a></li>
+                            <li><a href="https://lite-cash.com/LitecashWhitepaper.pdf">WHITEPAPER</a></li>
                             <li><a href="http://explorer.lite-cash.com">EXPLORER</a></li>
                             <li><a href="#features">FEATURES</a></li>
                             <li><a href="#exchange">EXCHANGE</a></li>
@@ -67,7 +73,7 @@
                         <div style="clear:both"></div>
                         <div class="collapse" id="navbarMobile" style="width:100%">
                             <ul class="nav nav-mobile">
-                                <li><a href="https://lite-cash.com/litepaper.pdf">WHITEPAPER</a></li>
+                                <li><a href="https://lite-cash.com/LitecashWhitepaper.pdf">WHITEPAPER</a></li>
                                 <li><a href="http://explorer.lite-cash.com">EXPLORER</a></li>
                                 <li><a href="#features">FEATURES</a></li>
                                 <li><a href="#exchange">EXCHANGE</a></li>
@@ -94,11 +100,11 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 align-self-center">
                         <h1>The Speed of Lite</h1>
-                        <p>Litecash is the first fork of Beam. We removed the founder's reward and are 100% community funded. <br><br> Litecash provides what today's cryptocurrency enthusiast craves. High speed, compact size, privacy, and low fees. A new <a href="https://lite-cash.com/litepaper.pdf">whitepaper</a> is now ready to explain the evolving goals of Litecash.</p>
+                        <p>Litecash is the first fork of Beam. We removed the founder's reward and are 100% community funded. <br><br> Litecash provides what today's cryptocurrency enthusiast craves. High speed, compact size, privacy, and low fees. A new <a href="https://lite-cash.com/LitecashWhitepaper.pdf">whitepaper</a> is now ready to explain the evolving goals of Litecash.</p>
 
                         <h3 style="color: white;">Download a Wallet!</h3>
                         <div class="wallet-list">
-                            <a href="https://lite-cash.com/release/windows/Litecash-2.5.75-GUI-win64.zip" class="btn-secondary-box">
+                            <a href="https://github.com/Litecash-Dev/litecash/releases/tag/2.5.96" class="btn-secondary-box">
                                 <span class="iconify" data-icon="mdi-windows" height="20px"></span>
                                 Windows (GUI 64bit)
                             </a>
@@ -123,7 +129,11 @@
                     </div>
                     <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 align-self-center">
                         <div class="header-image">
-                            <img src="assets/images/header_web.svg" class="img-fluid d-block mx-auto" alt="">
+                            <!-- <img src="assets/images/header_web.svg" class="img-fluid d-block mx-auto" alt=""> -->
+                            <video width="400" autoplay muted id="logo-video">
+                                <source src="video_2021-10-22_15-23-25.mp4" type="video/mp4">
+                                Your browser does not support HTML video.
+                            </video>
                         </div>
                     </div>
                 </div>
@@ -225,8 +235,9 @@
                         <h2 class="section-title">Exchange</h2>
                     </div>
                     <div class="left-text">
-                        <p class="dark">Litecash (CASH) is available on TradeOgre
-                            <a href="https://tradeogre.com/exchange/BTC-CASH">Bitcoin Trading Pair</a><br>
+                        <p class="dark">Litecash (CASH) is available on TradeOgre<br>
+                            <a href="https://tradeogre.com/exchange/BTC-CASH">Bitcoin Trading Pair</a> &nbsp;
+                            <a href="https://tradeogre.com/exchange/LTC-CASH">Litecoin Trading Pair</a><br>
                             <a href="https://tradeogre.com/exchange/BTC-CASH"><img src="assets/images/tradeogre.png" alt="Trade Ogre" style="margin-top: 4px"></a>
                         </p>
                         <p class="dark">Litecash (CASH) is available on Polarity
@@ -258,7 +269,8 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 align-self-center">
-                    <img src="assets/images/theme-1-about_web.svg" class="img-fluid float-right" alt="Arda ICO">
+                    <img src="assets/images/Cash_is_King_Blue_Gold_Crown.png" class="img-fluid float-right" alt="Cash is King" width="400">
+                    <!-- <img src="assets/images/theme-1-about_web.svg" class="img-fluid float-right" alt="Arda ICO"> -->
                 </div>
             </div>
             <!-- ***** About End ***** -->
@@ -340,6 +352,10 @@
         if (location.search.indexOf("statcont") > -1) {
             document.getElementById('statcounter').style.position = 'static'
         }
+        // document.addEventListener("DOMContentLoaded",function(){
+        //     console.log("🚀 ~ file: index.html ~ line 350 ~ document.addEventListener ~ document.getElementById('logo-video')", document.getElementById('logo-video'))
+        //     document.getElementById('logo-video').play();
+        // });
     </script>
 
     <!-- jQuery -->
@@ -353,7 +369,7 @@
     <script src="assets/js/bootstrap.min.js"></script>
 
     <!-- Plugins -->
-    <script src="assets/js/particles.min.js"></script>
+    <script src="assets/js/particle s.min.js"></script>
     <script src="assets/js/scrollreveal.min.js"></script>
     <script src="assets/js/jquery.downCount.js"></script>
     <script src="assets/js/parallax.min.js"></script>
