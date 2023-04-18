@@ -9,8 +9,7 @@
         <meta name="keywords" content="litecash, CASH, bitcoin, beam, btc, eth" />
         <meta name="author" content="litecash developer"/>
 
-        <!-- Favicon -->
-        <!-- Favicon -->
+    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -61,33 +60,6 @@ $block_detail = get_block( $_GET["block"] );
 						</a>
 						<!-- ***** Logo End ***** -->
 
-						<!-- ***** Lang Start ***** -->
-<!--
-						<div class="lang">
-							<div class="selected">
-								<img src="assets/images/flags/en.png" alt="">
-								<i class="fa fa-angle-down"></i>
-							</div>
-							<ul class="flag-list">
-								<li>
-									<a href="#">
-										<img src="assets/images/flags/en.png" alt=""><span>EN</span>
-									</a>
-								</li>	
-								<li>
-									<a href="#">
-										<img src="assets/images/flags/ru.png" alt=""><span>RU</span>
-									</a>
-								</li>	
-								<li>
-									<a href="#">
-										<img src="assets/images/flags/br.png" alt=""><span>BR</span>
-									</a>
-								</li>	
-							</ul>
-						</div>
--->
-						<!-- ***** Lang End ***** -->
 
 						<!-- ***** Menu Start ***** -->
 						<ul class="nav">
@@ -121,22 +93,6 @@ $block_detail = get_block( $_GET["block"] );
 				</div>
 			</div>
 		</div>
-<!--
-		<div class="search">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="input-wrapper">
-							<div class="input">
-								<input type="text" placeholder="block, hash, transaction, etc...">
-								<button><i class="fa fa-search"></i></button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
--->
 	</section>
 	<!-- ***** Wellcome Area End ***** -->
 
@@ -214,7 +170,7 @@ $block_detail = get_block( $_GET["block"] );
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
-						<p class="copyright">&copy; 2021 Litecash Developers Group</p>
+						<p class="copyright">&copy; 2023 Litecash Developers Group</p>
 					</div>
 				</div>
 			</div>

@@ -58,7 +58,6 @@ function get_cash_usd_price() {
 function get_btc_price() {
         $ch = curl_init();
 
-//        curl_setopt($ch, CURLOPT_URL, 'https://api.coinbase.com/v2/prices/spot?currency=USD');
 	curl_setopt($ch, CURLOPT_URL, 'https://cex.io/api/last_price/BTC/USD');
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 
@@ -152,6 +151,7 @@ function get_blocks($height, $count) {
 
 	return $blocks_decoded;
 }
+
 if(isSet($_REQUEST['difficulty']))
 {
  $h = get_height();
@@ -178,4 +178,5 @@ if(isSet($_REQUEST['height']))
 {
  echo get_height();
 }
+
 ?>

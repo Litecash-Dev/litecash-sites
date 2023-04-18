@@ -65,34 +65,6 @@ $height = get_height();
 						</a>
 						<!-- ***** Logo End ***** -->
 
-						<!-- ***** Lang Start ***** -->
-<!-- hide
-						<div class="lang">
-							<div class="selected">
-								<img src="assets/images/flags/en.png" alt="">
-								<i class="fa fa-angle-down"></i>
-							</div>
-							<ul class="flag-list">
-								<li>
-									<a href="#">
-										<img src="assets/images/flags/en.png" alt=""><span>EN</span>
-									</a>
-								</li>	
-								<li>
-									<a href="#">
-										<img src="assets/images/flags/ru.png" alt=""><span>RU</span>
-									</a>
-								</li>	
-								<li>
-									<a href="#">
-										<img src="assets/images/flags/br.png" alt=""><span>BR</span>
-									</a>
-								</li>	
-							</ul>
-						</div>
--->
-						<!-- ***** Lang End ***** -->
-
 						<!-- ***** Menu Start ***** -->
 						<ul class="nav">
 							<li><a href="/">BLOCKCHAIN HOME</a></li>
@@ -125,22 +97,7 @@ $height = get_height();
 				</div>
 			</div>
 		</div>
-<!--
-		<div class="search">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="input-wrapper">
-							<div class="input">
-								<input type="text" placeholder="block, hash, transaction, etc...">
-								<button onclick="#"><i class="fa fa-search"></i></button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
--->	
+
 	</section>
 	<!-- ***** Wellcome Area End ***** -->
 
@@ -183,16 +140,7 @@ foreach($blocks as $block) {
 }
 
 ?>
-<!--
-								<tr>
-									<td><a href="block-detail.php">1883451</a></td>
-									<td>26 minutes</td>
-									<td>1 - 0.3 kB</td>
-									<td>4.00000000 ARD</td>
-									<td>2487.2 </td>
-									<td><a href="block-detail.html">EKnqTC9XEuucZEhD3miDGnbJxBptcxhByA</a></td>
-								</tr>
--->
+
 
 
 							</tbody>
@@ -210,7 +158,7 @@ foreach($blocks as $block) {
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
-						<p class="copyright">&copy; 2021 Litecash Developers Group</p>
+						<p class="copyright">&copy; 2023 Litecash Developers Group</p>
 					</div>
 				</div>
 			</div>

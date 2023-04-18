@@ -14,7 +14,6 @@
         <meta name="author" content="litecash developers"/>
 
 	<!-- Favicon -->
-        <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -80,34 +79,6 @@ $litecash_price = get_cash_price();
 						</a>
 						<!-- ***** Logo End ***** -->
 
-						<!-- ***** Lang Start ***** -->
-<!-- hide
-						<div class="lang">
-							<div class="selected">
-								<img src="assets/images/flags/en.png" alt="">
-								<i class="fa fa-angle-down"></i>
-							</div>
-							<ul class="flag-list">
-								<li>
-									<a href="#">
-										<img src="assets/images/flags/en.png" alt=""><span>EN</span>
-									</a>
-								</li>	
-								<li>
-									<a href="#">
-										<img src="assets/images/flags/ru.png" alt=""><span>RU</span>
-									</a>
-								</li>	
-								<li>
-									<a href="#">
-										<img src="assets/images/flags/br.png" alt=""><span>BR</span>
-									</a>
-								</li>	
-							</ul>
-						</div>
--->
-						<!-- ***** Lang End ***** -->
-
 						<!-- ***** Menu Start ***** -->
 						<ul class="nav">
 							<li><a href="/">BLOCKCHAIN HOME</a></li>
@@ -140,22 +111,6 @@ $litecash_price = get_cash_price();
 				</div>
 			</div>
 		</div>
-<!--
-		<div class="search">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="input-wrapper">
-							<div class="input">
-								<input type="text" placeholder="block, hash, transaction, etc...">
-								<button><i class="fa fa-search"></i></button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
--->	
 	</section>
 	<!-- ***** Wellcome Area End ***** -->
 
@@ -220,19 +175,7 @@ $litecash_price = get_cash_price();
 						</div>
 					</div>
 				</div>
-<!-- disabled
-				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-					<div class="item">
-						<div class="title">
-							<div class="icon"></div>
-							<h5>Hashrate</h5>
-						</div>
-						<div class="text">
-							<span>224.562 GH/s</span>
-						</div>
-					</div>
-				</div>
--->
+
 				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
 					<div class="item">
 						<div class="title">
@@ -267,19 +210,6 @@ $litecash_price = get_cash_price();
 						</div>
 					</div>
 				</div>
-<!--
-				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-					<div class="item">
-						<div class="title">
-							<div class="icon"></div>
-							<h5>Trade Volume</h5>
-						</div>
-						<div class="text">
-							<span>$9,093.91</span>
-						</div>
-					</div>
-				</div>
--->
 			</div>
 		</div>
 	</section>
@@ -303,7 +233,7 @@ $litecash_price = get_cash_price();
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
-						<p class="copyright">&copy; 2021 Litecash Developers Group</p>
+						<p class="copyright">&copy; 2023 Litecash Developers Group</p>
 					</div>
 				</div>
 			</div>
@@ -311,11 +241,6 @@ $litecash_price = get_cash_price();
 	</footer>
 	<!-- ***** Contact & Footer End ***** -->
 
-<!-- crypto currency ticker
-
-<div style="width: 100%; height:62px; background-color: #1D2330; overflow:hidden; box-sizing: border-box; border: 1px solid #282E3B; border-radius: 4px; text-align: right; line-height:14px; block-size:62px; font-size: 12px; box-sizing:content-box; font-feature-settings: normal; text-size-adjust: 100%; box-shadow: inset 0 -20px 0 0 #262B38;padding:1px;padding: 0px; margin: 0px;"><div style="height:40px;"><iframe src="https://widget.coinlib.io/widget?type=horizontal_v2&theme=dark&pref_coin_id=1505&invert_hover=no" width="100%" height="36" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;"></iframe></div><div style="color: #626B7F; line-height: 14px; font-weight: 400; font-size: 11px; box-sizing:content-box; margin: 5px 6px 10px 0px; font-family: Verdana, Tahoma, Arial, sans-serif;">powered by&nbsp;<a href="https://coinlib.io" target="_blank" style="font-weight: 500; color: #626B7F; text-decoration:none; font-size: 11px;">Coinlib</a></div></div>
-
--->
 
 <script>
 function refHeight()
@@ -426,6 +351,7 @@ xhttp.send();
 	<!-- Global Init -->
 	<script src="assets/js/particle-blue.js"></script>
 	<script src="assets/js/custom.js"></script>
+
 </body>
 </html>
 
