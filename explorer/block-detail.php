@@ -4,10 +4,10 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Litecash Block Explorer Detail</title>
-        <meta name="description" content="Litecash is a privacy centric cryptocurrency." />
+        <title>LiteCash Block Explorer Detail</title>
+        <meta name="description" content="LiteCash - A private coin at the speed of lite!" />
         <meta name="keywords" content="litecash, CASH, bitcoin, beam, btc, eth" />
-        <meta name="author" content="litecash developer"/>
+        <meta name="author" content="LiteCash Developers Group"/>
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -170,7 +170,7 @@ $block_detail = get_block( $_GET["block"] );
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
-						<p class="copyright">&copy; 2023 Litecash Developers Group</p>
+						<p class="copyright">&copy; 2023 LiteCash Developers Group</p>
 					</div>
 				</div>
 			</div>
