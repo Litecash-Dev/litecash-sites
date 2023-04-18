@@ -62,36 +62,7 @@ $litecash_price = get_cash_price();
 		</div>
 	</div>	
 
-	<!-- ***** Header Area Start ***** -->
-	<header class="header-area">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<nav class="main-nav">
-						<!-- ***** Logo Start ***** -->
-						<a href="/" class="logo">
-							<img src="assets/images/logos/Logo24.png" class="light-logo" alt=""/>
-							<img src="assets/images/logos/Logo24.png" class="dark-logo" alt=""/>
-						</a>
-						<!-- ***** Logo End ***** -->
-
-						<!-- ***** Menu Start ***** -->
-						<ul class="nav">
-							<li><a href="/">BLOCKCHAIN HOME</a></li>
-							<li><a href="blocks.php">LATEST BLOCKS</a></li>
-							<li><a target="_blank" href="http://lite-cash.com" class="btn-nav-box">Litecash Website</a></li>
-							<li><a target="_blank" href="https://github.com/Litecash-Dev/litecash" class="btn-nav-box">Litecash Github</a></li>
-						</ul>
-						<a class='menu-trigger'>
-							<span>Menu</span>
-						</a>
-						<!-- ***** Menu End ***** -->						
-					</nav>
-				</div>
-			</div>
-		</div>
-	</header>
-	<!-- ***** Header Area End ***** -->
+	<?php include('header.php') ?>
 
 	<!-- ***** Wellcome Area Start ***** -->
 	<section class="block-explorer-wrapper bg-bottom-center" id="welcome-1">
@@ -212,30 +183,9 @@ $litecash_price = get_cash_price();
 
 <div>
 
-<?php 
-#echo "<form name='myForm'><select onchange='this.form.submit()' name='theme'>";
-#echo "<option value='dark'>Select Theme</option>";
-#echo "<option value='dark'>Dark Theme</option>";
-#echo "<option value='blue'>Blue Theme</option>";
-#echo "</select></form>";
-?>
-
 </div>
 
-
-	<!-- ***** Contact & Footer Start ***** -->
-	<footer id="contact">
-		<div class="footer-bottom slim">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<p class="copyright">&copy; 2023 LiteCash Developers Group</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<!-- ***** Contact & Footer End ***** -->
+<?php include('footer.php') ?>
 
 
 <script>

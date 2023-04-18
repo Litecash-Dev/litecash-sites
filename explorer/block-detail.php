@@ -47,37 +47,7 @@ $block_detail = get_block( $_GET["block"] );
 		</div>
 	</div>	
 
-	<!-- ***** Header Area Start ***** -->
-	<header class="header-area">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<nav class="main-nav">
-						<!-- ***** Logo Start ***** -->
-						<a href="/" class="logo">
-							<img src="assets/images/logos/Logo24.png" class="light-logo" alt=""/>
-							<img src="assets/images/logos/Logo24.png" class="dark-logo" alt=""/>
-						</a>
-						<!-- ***** Logo End ***** -->
-
-
-						<!-- ***** Menu Start ***** -->
-						<ul class="nav">
-							<li><a href="/">BLOCKCHAIN HOME</a></li>
-							<li><a href="blocks.php">LATEST BLOCKS</a></li>
-							<li><a target="_blank" href="http://lite-cash.com" class="btn-nav-box">Litecash Website</a></li>
-                                                        <li><a target="_blank" href="https://github.com/Litecash-Dev/litecash" class="btn-nav-box">Litecash Github</a></li>
-						</ul>
-						<a class='menu-trigger'>
-							<span>Menu</span>
-						</a>
-						<!-- ***** Menu End ***** -->						
-					</nav>
-				</div>
-			</div>
-		</div>
-	</header>
-	<!-- ***** Header Area End ***** -->
+	<?php include('header.php') ?>
 
 	<!-- ***** Wellcome Area Start ***** -->
 	<section class="block-explorer-wrapper bg-bottom-center" id="welcome-1">
@@ -115,10 +85,10 @@ $block_detail = get_block( $_GET["block"] );
 					<div class="table-responsive">
 						<table class="table table-striped table-latests table-detail">
 							<tbody>
-                                                                <tr>
-                                                                        <td><strong>Block</strong></td>
-                                                                        <td> <?php echo $block_detail['height']; ?> </td>
-                                                                </tr>
+								<tr>
+									<td><strong>Block</strong></td>
+									<td> <?php echo $block_detail['height']; ?> </td>
+								</tr>
 								<tr>
 									<td><strong>Chain Work</strong></td>
 									<td> <?php echo $block_detail['chainwork']; ?> </td>
@@ -139,10 +109,10 @@ $block_detail = get_block( $_GET["block"] );
 									<td><strong>Timestamp</strong></td>
 									<td> <?php echo $block_detail['timestamp']; ?> </td>
 								</tr>
-                                                                <tr>
-                                                                        <td><strong>Maturity</strong></td>
-                                                                        <td> <?php echo $block_detail['height'] + 3; ?> </td>
-                                                                </tr>
+								<tr>
+									<td><strong>Maturity</strong></td>
+									<td> <?php echo $block_detail['height'] + 3; ?> </td>
+								</tr>
 
 							</tbody>
 						</table>
@@ -164,19 +134,7 @@ $block_detail = get_block( $_GET["block"] );
 	</section>
 
 
-	<!-- ***** Contact & Footer Start ***** -->
-	<footer id="contact">
-		<div class="footer-bottom slim">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<p class="copyright">&copy; 2023 LiteCash Developers Group</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<!-- ***** Contact & Footer End ***** -->
+	<?php include('footer.php') ?>
 
 
 	<!-- jQuery -->
