@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>LiteCash Block Explorer Detail</title>
+        <title>LiteCash Blockchain Explorer - Block Details</title>
         <meta name="description" content="LiteCash - A private coin at the speed of lite!" />
         <meta name="keywords" content="litecash, CASH, bitcoin, beam, btc, eth" />
         <meta name="author" content="LiteCash Developers Group"/>
@@ -55,7 +55,7 @@ $block_detail = get_block( $_GET["block"] );
 			<div class="container text-center">
 				<div class="row">
 					<div class="col-lg-12 align-self-center">
-						<h1>Blockchain Explorer Detail</h1>
+						<h1>LiteCash Block Details</h1>
 					</div>
 					<div class="offset-lg-3 col-lg-6">
 						<p>Up To Block <?php echo $height; ?> </p>
@@ -71,7 +71,7 @@ $block_detail = get_block( $_GET["block"] );
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="center-heading">
-						<h2 class="section-title">Details for Block</h2>
+						<h2 class="section-title">Block Details</h2>
 					</div>
 				</div>
 				<div class="offset-lg-3 col-lg-6">
@@ -118,15 +118,6 @@ $block_detail = get_block( $_GET["block"] );
 						</table>
 					</div>
 				</div>
-
-
-<!--
-				<div class="col-lg-3 col-md-3 col-sm-12">
-					<div class="qr">
-						<img src="assets/images/qr.svg" class="img-fluid d-block mx-auto" alt="">
-					</div>
-				</div>
--->
 			</div>
 
 

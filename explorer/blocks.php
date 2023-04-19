@@ -7,7 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="refresh" content="60">
-	<title>LiteCash Block Explorer</title>
+	<title>LiteCash Blockchain Explorer - Blocks</title>
 	<meta name="description" content="LiteCash - A private coin at the speed of lite!" />
 	<meta name="keywords" content="litecash, CASH, bitcoin, beam, btc, eth" />
 	<meta name="author" content="LiteCash Developers Group"/>
