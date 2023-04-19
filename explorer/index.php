@@ -91,7 +91,7 @@ $litecash_price = get_cash_price();
 				</div>
 				<div class="offset-lg-3 col-lg-6">
 					<div class="center-text">
-						<p>Current pricing is based upon CoinGecko data.</p>
+						<p>Current pricing is based upon <a href="https://www.coingecko.com/en/coins/litecash" target="_blank">CoinGecko</a> data.</p>
 					</div>					
 				</div>
 			</div>
